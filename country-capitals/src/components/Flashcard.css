@@ -8,7 +8,7 @@
 .flashcard {
   width: 100%;
   max-width: 460px;
-  height: 380px;          /* Slightly taller for flag */
+  height: 380px;
   perspective: 1200px;
   cursor: pointer;
   margin: 0 auto;
@@ -28,6 +28,11 @@
   transform: rotateY(180deg);
 }
 
+/* Difficulty-based colors for FRONT */
+.flashcard.easy .flashcard-front   { background: linear-gradient(135deg, #1e40af, #3b82f6); }
+.flashcard.medium .flashcard-front { background: linear-gradient(135deg, #b45309, #f59e0b); }
+.flashcard.hard .flashcard-front   { background: linear-gradient(135deg, #991b1b, #ef4444); }
+
 /* FRONT & BACK */
 .flashcard-front,
 .flashcard-back {
@@ -45,7 +50,6 @@
 }
 
 .flashcard-front {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
   transform: rotateY(0deg);
 }
 
@@ -72,7 +76,7 @@
   line-height: 1.1;
 }
 
-/* === FLAG FIXES === */
+/* Flag Fixes */
 .flag-wrapper {
   transform: rotateY(0deg);
   margin-bottom: 15px;

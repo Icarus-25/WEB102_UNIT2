@@ -10,7 +10,7 @@ const Flashcard = ({ card, flipped, setFlipped }) => {
   return (
     <div className="flashcard-container">
       <div 
-        className={`flashcard ${flipped ? 'flipped' : ''}`}
+        className={`flashcard ${flipped ? 'flipped' : ''} ${card.difficulty}`}
         onClick={handleFlip}
       >
         <div className="flashcard-inner">
