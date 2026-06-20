@@ -28,7 +28,6 @@ const App = () => {
         <h2>Can you guess all capitals of the countries in America?</h2>
         <p className="total-cards">
           Total Cards: <strong>{americaCards.length}</strong> | 
-          Current: <strong>{currentIndex + 1}</strong>
         </p>
       </div>
 
