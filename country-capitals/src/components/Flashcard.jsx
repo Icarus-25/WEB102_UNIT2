@@ -1,6 +1,8 @@
 import './Flashcard.css';
 
-const Flashcard = ({ card, flipped, setFlipped, onNext }) => {
+const Flashcard = ({ card, flipped, setFlipped }) => {
+  const flagUrl = `https://flagcdn.com/w320/${card.code.toLowerCase()}.png`;
+
   const handleFlip = () => {
     setFlipped(!flipped);
   };
@@ -13,10 +15,17 @@ const Flashcard = ({ card, flipped, setFlipped, onNext }) => {
       >
         <div className="flashcard-inner">
           
-          {/* FRONT - Country */}
+          {/* FRONT - Country + Flag */}
           <div className="flashcard-front">
             <div className="card-content">
-              <p className="label">Country</p>
+              <div className="flag-wrapper">
+                <img 
+                  src={flagUrl} 
+                  alt={`${card.country} flag`} 
+                  className="country-flag" 
+                />
+              </div>
+              <p className="label">COUNTRY</p>
               <h2>{card.country}</h2>
             </div>
           </div>
@@ -24,7 +33,7 @@ const Flashcard = ({ card, flipped, setFlipped, onNext }) => {
           {/* BACK - Capital */}
           <div className="flashcard-back">
             <div className="card-content">
-              <p className="label">Capital</p>
+              <p className="label">CAPITAL CITY</p>
               <h2>{card.capital}</h2>
             </div>
           </div>

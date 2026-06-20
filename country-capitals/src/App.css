@@ -5,37 +5,35 @@
 }
 
 .App {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background: #f8f9fa;
   min-height: 100vh;
+  background: #f8fafc;
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .header h1 {
   font-size: 2.8rem;
   color: #1e3a8a;
-  margin-bottom: 10px;
 }
 
 .header h2 {
-  color: #334155;
-  font-weight: 400;
+  color: #475569;
+  margin: 10px 0;
 }
 
 .total-cards {
   font-size: 1.3rem;
-  margin-top: 15px;
   color: #64748b;
+  margin-top: 15px;
 }
 
-/* Controls */
 .controls {
   margin-top: 30px;
 }
@@ -48,7 +46,6 @@
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 .next-btn:hover {
