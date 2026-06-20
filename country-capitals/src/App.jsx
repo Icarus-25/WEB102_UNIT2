@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { americaCards } from './data/americaCards';
 
 const App = () => {
 
