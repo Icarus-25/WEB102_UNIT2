@@ -37,7 +37,7 @@ const getRandomCard = () => {
 
       <div className="controls">
         <button onClick={getRandomCard} className="next-btn">
-          Next Random Country →
+          Next Country →
         </button>
       </div>
       
